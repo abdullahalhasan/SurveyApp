@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.shohel.geopoll.BalanceWithdrawalActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:background="@color/header_color"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/five_padding"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Total Earnings"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total_earnings_withdraw"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0.0"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/five_padding"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Total Withdrawal"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total_withdraw_withdraw"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0.0"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/five_padding"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Availabe"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/current_balance_withdraw"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0.0"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/ten_dp"
+            android:text="Mobile Number"
+            android:textColor="@color/earn_back"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:onClick="mobileNumberBalanceWithdrawalPrompt"
+            android:drawableRight="@drawable/ic_info_24dp"/>
+
+        <TextView
+            android:id="@+id/user_mobile_payment_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round_input"
+            android:gravity="center"
+            android:padding="@dimen/ten_dp"
+            android:onClick="mobileNumberBalanceWithdrawalPrompt"
+            android:textSize="18sp" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/round_input">
+
+            <EditText
+                android:id="@+id/withdrawal_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Withdrawal Amount"
+                android:inputType="numberDecimal" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/ten_dp"
+            android:text="Method"
+            android:textColor="@color/earn_back"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/ic_info_24dp"
+            android:onClick="paymentMethodAlert"/>
+
+        <Spinner
+
+            android:id="@+id/withdrawal_method_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:padding="@dimen/ten_dp"
+            android:text="Bkash"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/payment_request_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/ten_dp"
+        android:layout_weight=".5"
+        android:background="@drawable/round_header"
+        android:onClick="paymentRequest"
+        android:text="@string/payment_request"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</LinearLayout>

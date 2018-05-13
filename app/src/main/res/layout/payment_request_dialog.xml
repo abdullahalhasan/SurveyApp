@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="@dimen/ten_dp"
+        android:textStyle="bold"
+        android:textColor="@color/earn_back"
+        android:gravity="center"
+        android:text="Mobile Number"/>
+    <TextView
+        android:id="@+id/user_mobile_payment_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="@dimen/ten_dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="8801710288078"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="@dimen/ten_dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/earn_back"
+        android:text="Amount"/>
+    <EditText
+        android:id="@+id/withdrawal_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="@dimen/ten_dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="200"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="@dimen/ten_dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/earn_back"
+        android:text="Method"/>
+    <Spinner
+        android:id="@+id/withdrawal_method_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="@dimen/ten_dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="Bkash"/>
+
+    <Button
+        android:id="@+id/final_payment_request_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_header"
+        android:textAllCaps="true"
+        android:text="@string/payment_request"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="@dimen/ten_dp" />
+
+</LinearLayout>
