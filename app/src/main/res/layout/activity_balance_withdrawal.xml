@@ -184,7 +184,6 @@
         android:layout_margin="@dimen/ten_dp"
         android:layout_weight=".5"
         android:background="@drawable/round_header"
-        android:onClick="paymentRequest"
         android:text="@string/payment_request"
         android:textAllCaps="true"
         android:textColor="@color/white"

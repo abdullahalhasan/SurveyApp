@@ -218,7 +218,7 @@ public class PostTask extends AsyncTask {
                     @Override
                     public void onResponse(JSONObject response) {
                         // Toast.makeText(getApplicationContext(),response.toString(),Toast.LENGTH_LONG).show();
-                        Toast.makeText(context,"Successfully Completed",Toast.LENGTH_LONG).show();
+                        //Toast.makeText(context,"Successfully Completed",Toast.LENGTH_LONG).show();
                         //pDialogHide();
 
 
@@ -270,7 +270,7 @@ public class PostTask extends AsyncTask {
                     @Override
                     public void onResponse(JSONObject response) {
                         //Toast.makeText(getApplicationContext(),response.toString(),Toast.LENGTH_LONG).show();
-                        Toast.makeText(context,"Successfully Finished",Toast.LENGTH_LONG).show();
+                        //Toast.makeText(context,"Successfully Finished",Toast.LENGTH_LONG).show();
                         //pDialogHide();
                         Log.d("Call","finished");
 

@@ -49,7 +49,7 @@ public class BalanceWithdrawalActivity extends AppCompatActivity implements Adap
     String totalBalance;
     String totalWithdrwal;
     String availableBalance;
-    double balance = 0.0,withdrawBalance = 0.0,available_balance = 0.0;
+    double balance = 0.0, withdrawBalance = 0.0, available_balance = 0.0;
 
     RequestQueue queue;
     JsonObjectRequest objRequest;
@@ -59,15 +59,31 @@ public class BalanceWithdrawalActivity extends AppCompatActivity implements Adap
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_balance_withdrawal);
 
+        totalBalance = String.valueOf(balance);
+        totalWithdrwal = String.valueOf(withdrawBalance);
+        availableBalance = String.valueOf(available_balance);
+
         totalBalanceTextView = findViewById(R.id.total_earnings_withdraw);
         totalWithdrawalTextView = findViewById(R.id.total_withdraw_withdraw);
         availableBalanceTextView = findViewById(R.id.current_balance_withdraw);
         userMobileTextView = findViewById(R.id.user_mobile_payment_request);
+        paymentRequestButton = findViewById(R.id.payment_request_button);
+        withdrawalAmountEditText = findViewById(R.id.withdrawal_amount);
+        payment_method = (Spinner) findViewById(R.id.withdrawal_method_spinner);
 
         /*totalBalance = String.valueOf(MainPageActivity.balance);
         totalWithdrwal = String.valueOf(MainPageActivity.withdrawBalance);
-        availableBalance = String.valueOf(MainPageActivity.available_balance);
-*/
+        availableBalance = String.valueOf(MainPageActivity.available_balance);*/
+
+        /*paymentRequestButton.setEnabled(false);
+        withdrawalAmountEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                paymentRequestButton.setEnabled(true);
+            }
+        });*/
+
+
         queue =  Volley.newRequestQueue(this);
         paymentObject = new JSONObject();
 
@@ -75,8 +91,7 @@ public class BalanceWithdrawalActivity extends AppCompatActivity implements Adap
         userID = sharedPreferences.getString("user_id","");
         userMobile = sharedPreferences.getString("user_mobile","");
 
-        withdrawalAmountEditText = findViewById(R.id.withdrawal_amount);
-        payment_method = (Spinner) findViewById(R.id.withdrawal_method_spinner);
+
 
         userMobileTextView.setText(userMobile);
 
@@ -86,6 +101,34 @@ public class BalanceWithdrawalActivity extends AppCompatActivity implements Adap
         payment_method.setAdapter(paymentMethodAdapter);
 
         payment_method.setOnItemSelectedListener(this);
+
+        paymentRequestButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (withdrawalAmountEditText.getText().toString().isEmpty()){
+                    withdrawalAmountEditText.setError("Input Withdrawal Amount!!");
+                } else {
+                    amount = withdrawalAmountEditText.getText().toString().trim();
+                    double withdraw = Double.valueOf(amount);
+                    if (withdraw < 200.0 || Double.valueOf(availableBalance) < withdraw || (withdraw > 1000 && method.contains("TalkTime"))) {
+                        if (withdraw < 200) {
+                            withdrawalAmountEditText.setError("Minimum Withdrawal is 200tk!");
+                            //Toast.makeText(this, "Minimum Withdrawal is 200tk!", Toast.LENGTH_SHORT).show();
+                        } else if(withdraw > 1000 && method.contains("TalkTime")){
+                            withdrawalAmountEditText.setError("Maximum TalkTime Withdrawal is 1000tk!");
+                            //Toast.makeText(this, "You balance is too low!", Toast.LENGTH_SHORT).show();
+                        } /*else {
+                            withdrawalAmountEditText.setError("Requested amount is lower than current balance!");
+                            //Toast.makeText(this, "You balance is too low!", Toast.LENGTH_SHORT).show();
+                        }*/
+                    } else {
+                        //Toast.makeText(BalanceWithdrawalActivity.this, amount, Toast.LENGTH_SHORT).show();
+                        paymentHistoryUpload();
+                    }
+                }
+            }
+
+        });
 
 
     }
@@ -100,7 +143,7 @@ public class BalanceWithdrawalActivity extends AppCompatActivity implements Adap
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         method = adapterView.getItemAtPosition(i).toString();
-        Toast.makeText(this, ""+method, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, ""+method, Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -108,22 +151,9 @@ public class BalanceWithdrawalActivity extends AppCompatActivity implements Adap
 
     }
 
-    public void paymentRequest(View view) {
-        amount = withdrawalAmountEditText.getText().toString().trim();
-        double withdraw = Double.valueOf(amount);
-        if (withdraw < 200.0 || Double.valueOf(availableBalance) < withdraw) {
-            if (withdraw<200) {
-                withdrawalAmountEditText.setError("Minimum Withdrawal is 200tk!");
-                //Toast.makeText(this, "Minimum Withdrawal is 200tk!", Toast.LENGTH_SHORT).show();
-            } else {
-                withdrawalAmountEditText.setError("Requested amount is lower than current balance!");
-                //Toast.makeText(this, "You balance is too low!", Toast.LENGTH_SHORT).show();
-            }
-        } else {
-            paymentHistoryUpload();
-        }
-        //paymentHistoryUpload();
-    }
+    /*public void paymentRequest(View view) {
+
+    }*/
 
     private void paymentHistoryUpload() {
 
@@ -216,7 +246,8 @@ public class BalanceWithdrawalActivity extends AppCompatActivity implements Adap
                                     availableBalanceTextView.setText(availableBalance+" BDT");
                                     Log.e("Balance",""+available_balance+" "+balance+" "+ withdrawBalance);
                                 }
-                                sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                                //sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+
                                 if (!sharedPreferences.getString("current_balance","").equals(String.valueOf(balance))){
                                     availableBalanceTextView.setText("  Current Balance:- "+String.valueOf(balance)+" BDT ");
                                     sharedPreferences.edit().putString("current_balance",String.valueOf(balance)).commit();
