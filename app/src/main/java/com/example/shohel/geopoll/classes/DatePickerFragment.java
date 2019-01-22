@@ -43,16 +43,16 @@ public class DatePickerFragment extends DialogFragment
             year = c.get(Calendar.YEAR);
             month = c.get(Calendar.MONTH);
             day = c.get(Calendar.DAY_OF_MONTH);
-            newDate = c.get(Calendar.YEAR);
+
             Log.e("month",newDate+" "+year);
         }
-
+        newDate = java.util.Calendar.getInstance().get(java.util.Calendar.YEAR);
         /*Date date = new Date();
         int year = c.get(Calendar.YEAR);
         int month = c.get(Calendar.MONTH);
         int day = c.get(Calendar.DAY_OF_MONTH);
-        newDate = c.get(Calendar.YEAR);
-        Log.e("month",newDate+" "+year);*/
+        newDate = c.get(Calendar.YEAR);*/
+        Log.e("month",newDate+" "+year);
         // Create a new instance of DatePickerDialog and return it
         return new DatePickerDialog(getActivity(), this, year, month, day);
     }

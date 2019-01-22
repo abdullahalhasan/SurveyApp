@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/ten_dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/five_padding"
+            android:background="@drawable/round_list_item"
+            android:padding="10dp"
+            android:paddingTop="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="3"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="1dp"
+                    android:text="Payment Method"
+                    android:textColor="@color/survey_color"
+                    android:textSize="@dimen/paymentHistoryTextSize" />
+
+                <TextView
+                    android:id="@+id/paymentMethodPHTV"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="3"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="1dp"
+                    android:text=": Bkash"
+                    android:textColor="@color/survey_color"
+                    android:textSize="@dimen/paymentHistoryTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="3"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="1dp"
+                    android:text="Amount"
+                    android:textColor="@color/survey_color"
+                    android:textSize="@dimen/paymentHistoryTextSize" />
+
+                <TextView
+                    android:id="@+id/amountPHTV"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="3"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="1dp"
+                    android:text=": 200 BDT"
+                    android:textColor="@color/survey_color"
+                    android:textSize="@dimen/paymentHistoryTextSize" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="3"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="1dp"
+                    android:text="Payment Status"
+                    android:textColor="@color/survey_color"
+                    android:textSize="@dimen/paymentHistoryTextSize" />
+
+                <TextView
+                    android:id="@+id/paymentStatusPHTV"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="3"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="1dp"
+                    android:text=": Pending"
+                    android:textColor="@color/survey_color"
+                    android:textSize="@dimen/paymentHistoryTextSize"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="3"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="1dp"
+                    android:text="Payment Time"
+                    android:textColor="@color/survey_color"
+                    android:textSize="@dimen/paymentHistoryTextSize" />
+
+                <TextView
+                    android:id="@+id/paymentTimePHTV"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="3"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="1dp"
+                    android:text=": 14-11-2018 20:45:01"
+                    android:textColor="@color/survey_color"
+                    android:textSize="@dimen/paymentHistoryTextSize" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.shohel.geopoll.PaymentHistoryActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4398b7"
+        android:weightSum="2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/totalBalancePHLayout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/totalEarningPHTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:paddingLeft="7dp"
+                android:paddingTop="2dp"
+                android:text="@string/total_earnings"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/balanceViewPHET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/totalEarningPHTV"
+                android:ems="10"
+                android:paddingLeft="7dp"
+                android:text="@string/_0_0"
+                android:textColor="?android:attr/detailsElementBackground"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/current_balance_layout"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/redeemPHLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/redeemPHButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+                    android:layout_weight="1"
+                    android:text="@string/reddem"
+                    android:textAllCaps="false"
+                    android:background="#57b257"
+                    android:textColor="#FFFF"
+                    android:onClick="redeemPH"
+                    android:paddingLeft="10dp"
+                    android:textAlignment="viewStart"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp" />
+                <Button
+                    android:id="@+id/balanceHistoryRefreshButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:drawableLeft="@drawable/ic_refresh_black_24dp"
+                    android:layout_weight="2"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="2dp"
+                    android:onClick="balanceHistoryRefresh"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#2f83a1" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:text="BDT"
+        android:textColor="@android:color/background_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:background="#009688"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/transactionHistoryButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:background="@android:color/background_light"
+            android:text="@string/transaction_history"
+            android:textStyle="bold"
+            android:textColor="@color/survey_color" />
+
+        <RelativeLayout
+            android:id="@+id/currentBalancePHLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/currentBalancePHTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:paddingLeft="7dp"
+                android:paddingTop="2dp"
+                android:text="@string/curernt_balance"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/currentBalanceViewPHET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/currentBalancePHTV"
+                android:ems="10"
+                android:paddingLeft="7dp"
+                android:text="@string/_0_0"
+                android:textColor="?android:attr/detailsElementBackground"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+        <!--TextView
+            android:id="@+id/currentBalancePHTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Balance: 0.0 BDT"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingRight="15dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/background_light"/-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/balanceHistoryListView"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

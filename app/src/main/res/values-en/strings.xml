@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PayPoll</string>
+    <string name="facebook_app_id">Facebook</string>
+
+    <string name="navigation_drawer_open">Open Nav</string>
+    <string name="navigation_drawer_close">Close Nav</string>
+
+    <string name="termncon">
+        PayPoll lets you earn real money and airtime credit by completing fast, easy tasks on your mobile phone. PeoPoll tasks include taking short surveys, uploading pictures, and more. Every task you complete adds to your PeoPoll credit, which can be redeemed through bKash, Rocket or airtime credit at any time. PayPoll information is anonymously collected, and we will never share your personal identifiable information.
+        \n\n
+        <big><b>WHO we are and WHAT we do:</b></big>
+We are Mindscape Limited – a market research company. We capture consumer’s behavior, demand, liking, disliking and their thoughts. With these information – we help our clients to design and modify their products and services that people want. Our client list includes the top local and multinational conglomerates. From telecom service providers to daily household items manufacturers; from bank to super stores; we help diverse types of clients to serve you better every day.
+        \n\n
+WHAT you will have to do:
+All you have to do is to let your opinion know through our app – PayPoll… There are small surveys where you’ll be asked very basic questions about yourself, your recent activities, your thoughts on different product or service you may have availed or know about.
+These surveys are usually takes very little time (approx. 5 to 8 minutes) to complete. They are also very easy to use and interactive. Every survey will notify you an estimated time and an incentive amount at the beginning. Once you successfully complete a survey, the incentive amount will be credited in to your PayPoll wallet immediately. You may redeem your balance anytime you want – as bKash/Rocket balance or airtime. Once you submit redeem request, your requested balance will be delivered within next 24 hours. Please read our Incentive Encashment Terms and Conditions for details.
+There is usually no right or wrong answer. You’ll only be asked to give answer you think is appropriate. But there could be some surveys which are not meant for you. If you start a survey which is not designed for you - you will be notified in a minute or two; and your survey will end immediately. Please note that we will not disburse any incentive for incomplete surveys, termination or if you provide fake information. Please refer to our Survey Participation Guideline for detail information.
+Moreover, there will be small tasks you will find in our app time to time. Completing those tasks will also give you lucrative incentives. For example – you may ask to send photos of your nearby billboard, or picture of a store you go for shopping.
+Please note that using our app requires an active internet connection. You may connect using mobile data or Wi-Fi; whichever is convenient for you. However, the app consumes very small amount of data; and most of the time you will be able to earn more than you have spent.
+
+        \n\n
+<big><b>Secrecy:</b></big>
+The app collects all the information anonymously and send through a secured connection (SSL: Secured Socket Layer). Once we collect the information you have provided, we analyze it in a way that it will never be possible to see your information separately. Note that we collect similar data from thousands of our other users too. And when it is finally processed – the data is clubbed in whole or in groups; never at an individual level.
+We will never share your personal information with anyone. In fact we have developed our system in a way that we will never be able to see your personal information.
+We also will never share your contact details with anyone. We will never send you any ad or promotional offers or will never ask you to purchase any product or service. There will be absolutely no such incident where you will be asked to provide any money to Mindscape or any of its partnering organization or person in order to use our app or to redeem your balance.
+Our users are welcome to visit our data center to be ensured regarding our data security system. Please connect to our customer care representatives though the phone numbers and email address provided in our contact details.
+Mindscape Limited (Owner of PayPoll) will be liable for any of your personal information leakage – if you can provide sufficient proofs in front of the appropriate judicial authority; and the court impeach Mindscape Limited guilty.
+Mindscape Limited is a Private Limited Company formed under the Company Act 1994 of Bangladesh. As a market research agency, it abides by the ESOMAR code of conduct – an International regulation for conducting survey and protect respondents’ confidentiality.
+
+    </string>
+
+    <!-- Intro Slider Related Strings -->
+
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="start">Start</string>
+    <string name="title_slide1">Earn Quick Money</string>
+    <string name="desc_slide1">Complete easy survey and earn real money.</string>
+    <string name="title_slide2">Answer from Anywhere</string>
+    <string name="desc_slide2">These surveys are short, completely anonymous and you can participate from anywhere and anytime</string>
+    <string name="title_slide3">Easy Cash Out</string>
+    <string name="desc_slide3">You can easily redeem your earning through mobile wallet (bKash, Rocket) or TalkTime </string>
+    <string name="snap">Snap</string>
+    <string name="received">Received</string>
+    <string name="sent">Sent</string>
+    <string name="latest">Latest</string>
+    <string name="previous">Previous</string>
+    <string name="delta">Delta</string>
+    <string name="wi_fi_data_usage">Wi-Fi Data Usage!</string>
+    <string name="default_notification_channel_id">123654789632145458798</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="gender_arrays">
+        <item>Select</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+        <item>Prefer not to say</item>
+    </string-array>
+    <string name="operator_prompt">Select Operator</string>
+
+    <string-array name="education">
+        <item>Select</item>
+        <item>Illiterate/ Only Sign/ No Schooling</item>
+        <item>School upto 5 yrs</item>
+        <item>School 6-10 yrs</item>
+        <item>SSC/ Dakhil</item>
+        <item>HSC/ Alim</item>
+        <item>Undergrad (BBA,BSc, etc.)</item>
+        <item>Undergrad (Prof.)(MBBS etc.)</item>
+        <item>Masters</item>
+        <item>Masters (Prof.)(M.Phil/Ph.D.)</item>
+    </string-array>
+    <string-array name="occupation_participant">
+        <item>Select</item>
+        <item>Student</item>
+        <item>House Wife</item>
+        <item>Unemployed</item>
+        <item>Unskilled worker</item>
+        <item>Petty trader</item>
+        <item>Skilled worker</item>
+        <item>Salesman/Clerk</item>
+        <item>Supervisor</item>
+        <item>Shop owner</item>
+        <item>Business : none</item>
+        <item>House owner</item>
+        <item>Business : 1–9</item>
+        <item>Officer/executive:jr.</item>
+        <item>Self Employed (Doctor/Engineer/Lawyer etc.)</item>
+        <item>Business : 10 +</item>
+        <item>Officer/executive: mid/sr</item>
+        <item>Agri laborer</item>
+        <item>Land Owner <foo>&lt;</foo> 9 Bigha/3 Acre</item>
+        <item>Land Owner <foo>&lt;</foo> 9-36 Bigha/3-12 Acre</item>
+        <item>Land Owner <foo>&lt;</foo> 36-75 Bigha/12-25 Acre</item>
+        <item>Land Owner <foo>&lt;</foo> 75 Bigha/25 Acre</item>
+    </string-array>
+
+    <string-array name="occupation_cwe">
+        <item>Select</item>
+        <item>Unskilled worker</item>
+        <item>Petty trader</item>
+        <item>Skilled worker</item>
+        <item>Salesman/Clerk</item>
+        <item>Supervisor</item>
+        <item>Shop owner</item>
+        <item>Business : none</item>
+        <item>House owner</item>
+        <item>Business : 1–9</item>
+        <item>Officer/executive:jr.</item>
+        <item>Self employed professional (Doctor/Engineer/Lawyer etc.)</item>
+        <item>Business : 10 +</item>
+        <item>Officer/executive: mid/sr</item>
+        <item>Agri laborer</item>
+        <item>Owner of land Less Than 1 Hectre/2.5 Acre</item>
+        <item>Owner of land Less Than 1-5 Hectre/2.5-12.5 Acre</item>
+        <item>Owner of land Less Than 5-10 Hectre/12.5-25 Acre</item>
+        <item>Owner of land More Than 10 Hectre/25 Acre</item>
+    </string-array>
+
+    <string-array name="thana">
+        <item>Select</item>
+        <item>Adabor</item>
+        <item>Azampur</item>
+        <item>Badda</item>
+        <item>Bangsal</item>
+        <item>Cantonment</item>
+        <item>Chowkbazar</item>
+        <item>Demra</item>
+        <item>Dhanmondi</item>
+        <item>Gendaria</item>
+        <item>Gulshan</item>
+        <item>Hazaribagh</item>
+        <item>Kadamtali</item>
+        <item>Kafrul</item>
+        <item>Kalabagan</item>
+        <item>Kamrangirchar</item>
+        <item>Khilgaon</item>
+        <item>Khilkhet</item>
+        <item>Kotwali</item>
+        <item>Lalbagh</item>
+        <item>Mirpur Model</item>
+        <item>Mohammadpur</item>
+        <item>Motijheel</item>
+        <item>New Market</item>
+        <item>Pallabi</item>
+        <item>Paltan</item>
+        <item>Panthapath</item>
+        <item>Ramna</item>
+        <item>Rampura</item>
+        <item>Sabujbagh</item>
+        <item>Shahbag</item>
+        <item>Sher-e-Bangla Nagar</item>
+        <item>Shyampur</item>
+        <item>Sutrapur</item>
+        <item>Tejgaon Industrial Area</item>
+        <item>Tejgaon</item>
+        <item>Uttar Khan</item>
+        <item>Uttara</item>
+        <item>Vatara</item>
+        <item>Wari</item>
+    </string-array>
+
+    <string-array name="operator_arrays">
+        <item>Select</item>
+        <item>88015</item>
+        <item>88016</item>
+        <item>88017</item>
+        <item>88018</item>
+        <item>88019</item>
+    </string-array>
+
+    <string-array name="marital_status">
+        <item>Select</item>
+        <item>Single</item>
+        <item>Married</item>
+        <item>Divorced</item>
+        <item>Widow</item>
+        <item>Widower</item>
+    </string-array>
+
+    <string-array name="withdrwarl_method_arrays">
+        <item>Select</item>
+        <item>TalkTime</item>
+        <item>Bkash</item>
+        <item>Rocket</item>
+
+    </string-array>
+
+    <string-array name="language_arrays">
+        <item>বাংলা</item>
+        <item>English</item>
+        <!--<item>Bangla</item>-->
+    </string-array>
+
+
+    <!-- Radio Button -->
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+
+    <!--Prompt Messages-->
+    <string name="cautionAlert">
+        Caution !!
+    </string>
+    <string name="give_carefully_alert">
+        Please Provide Authentic Information In Order To Use This App.
+        \nAll Information Will Be Kept Safe.
+        \n\nDo You Agree?
+    </string>
+    <string name="why_mobile_number_alert">Why you should provide us your number?
+        \n\nYour number will remain as your unique ID.
+        \nWe can only send money to your number which you will register here
+        \n\nIt might be talk time, bKash* or Rocket*.
+        \n\n<b>*Note:</b> You can only redeem money through bKash or Rocket if you have an existing active bKash or Rocket account registered through the mobile number you have entered here.
+    </string>
+    <string name="fullNameAlert">
+        Please give us your full name.
+    </string>
+    <string name="read_all_conditions_alert">
+        Please use the attached Terms and Conditions doc
+    </string>
+    <string name="sms_permission_alert">
+        We will only see to which operator you send or receive SMS from. We never see the text of the message or
+        the full number of the sender/receiver.
+    </string>
+    <string name="call_permission_alert">
+    We will only check to which operator do you call/sms or receive call/sms from. We never see the entire number but only
+        the operator code. Only first 4 digit of the number can be seen by us.
+    </string>
+    <string name="location_permission_alert">
+        This will help us to know where you visit, thus we can send you location based survey requests.
+    </string>
+    <string name="mobile_cant_be_changed_alert">
+        Mobile number cannot  be changed.
+    </string>
+    <string name="request_method_alert">
+        Select bKash/Rocket if and only if your number is already registered with bKash/Rocket.
+    </string>
+    <string name="payment_request_success">
+        Your request will be processed in next 24 hours.\n\nThanks for using PayPoll.
+    </string>
+    <string name="media_insight_alert">
+        Answer simple questions everyday to earn BDT 5.
+        \n\nThe questions are related with the media you consume everyday (i.e. TV, Newspaper, etc.)
+        \n\nFor completing this survey everyday for 30 days, you will receive addition BDT 50 after 30 days.
+    </string>
+    <string name="nearest_location_alert">
+        Select your nearest location.
+    </string>
+    <string name="nearest_Occupation_alert">
+        Select occupation from the list that best suits you.
+    </string>
+    <string name="nearest_education_alert">
+        Select the last achieved degree.
+        \n\ni.e. If you have completed HSC and currently enrolled for a bachelor degree, please select “HSC and equivalent”
+    </string>
+    <string name="who_is_CWE_alert">
+        A Chief Wage Earner is the person who earns majority in your family.
+    </string>
+    <string name="occupation_CWE_alert">
+        Select the Occupation that best suits. If retired – please select the last job he/she was engaged in.
+    </string>
+    <string name="education_CWE_alert">
+        Select the last achieved degree.
+        \n\ni.e. If the Chief Wage Earner have completed HSC and currently enrolled for a bachelor degree,
+        \nplease select “HSC and equivalent”
+    </string>
+
+
+    <string name="not_log_in">No se pudo iniciar sesión</string>
+    <string name="log_out">Log Out</string>
+    <string name="revoke">Revoke</string>
+    <string name="not_close_session">No se pudo cerrar sesión</string>
+    <string name="not_revoke">No se pudo revocar el acceso</string>
+    <string name="not_firebase_auth">No se pudo autenticar con Firebase</string>
+    <string name="terms">Here are few examples: The Intellectual Property disclosure will inform users that the contents, logo and other visual media you created is your property and is protected by copyright laws. A Termination clause will inform that users’ accounts on your website and mobile app or users’ access to your website and mobile (if users can’t have an account with you) can be terminated in case of abuses or at your sole discretion. A Governing Law will inform users which laws govern the agreement. This should the country in which your company is headquartered or the country from which you operate your website and mobile app. A Links To Other Web Sites clause will inform users that you are not responsible for any third party websites that you link to. This kind of clause will generally inform users that they are responsible for reading and agreeing (or disagreeing) with the Terms and Conditions or Privacy Policies of these third parties. If your website or mobile app allows users to create content and make that content public to other users, a Content section will inform users that they own the rights to the content they have created.The “Content” clause usually mentions that users must give you (the website or mobile app developer) a license so that you can share this content on your website/mobile app and to make it available to other users.Because the content created by users is public to other users, a DMCA notice clause (or Copyright Infringement ) section is helpful to inform users and copyright authors that, if any content is found to be a copyright infringement, you will respond to any DMCA takedown notices received and you will take down the content. A Limit What Users Can Do clause can inform users that by agreeing to use your service, they’re also agreeing to not do certain things. This can be part of a very long and thorough list in your Terms and Conditions agreements so as to encompass the most amount of negative uses. Here’s how 500px lists its prohibited activities.</string>
+    <string name="media_insight">Media Insight</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_balance_withdraw">BalanceWithdrawActivity</string>
+    <string name="title_activity_balance">BalanceActivity</string>
+    <string name="payment_request">Payment Request</string>
+    <string name="education_of_cwe">Education of CWE</string>
+    <string name="occupation_of_cwe">Occupation of CWE</string>
+    <string name="are_you_the_chief_wage_earner">Are you the Chief Wage Earner? :</string>
+    <string name="full_name">Full Name (ex. Sakil Al Hasan)</string>
+    <string name="gender">Gender :</string>
+    <string name="dob">Date of Birth (ex. 01/01/1998)</string>
+    <string name="email">Email (ex. abc@gmail.com)</string>
+    <string name="location">Location</string>
+    <string name="occupation">Occupation</string>
+    <string name="education">Education</string>
+
+    <string name="step_1">Step 1/4</string>
+    <string name="step_2">Step 2/4</string>
+    <string name="step_3">Step 3/4</string>
+    <string name="step_4">Step 4/4</string>
+    <string name="family_member">Number of Family members (ex. 4)</string>
+    <string name="marital_status">Marital Status (ex. Single/Married)</string>
+    <string name="kids">Kids (ex. 0/1/2)</string>
+    <string name="approximate_household_income">Approximate Monthly household income</string>
+    <string name="ok">OK, Thanks</string>
+    <string name="caution">Caution!!</string>
+    <string name="usersname">Name </string>
+    <string name="usersmobile">Mobile </string>
+    <string name="usersgender">Gender </string>
+    <string name="usersdob">DOB </string>
+    <string name="usersemail">Email </string>
+    <string name="userslocation">Location </string>
+    <string name="usersoccupation">Occupation </string>
+    <string name="selectpaymentalert">Please Select You Payment Method as Bkash Rocket or TalkTime!!</string>
+    <string name="server_error">Server Error !!</string>
+    <string name="total_earnings">Total Earnings</string>
+    <string name="total_withdrawal">Total Withdrawal</string>
+    <string name="available">Available</string>
+    <string name="kiderror">Kids count never greater than family member</string>
+    <string name="fillupall">Please Fill Up all the fields</string>
+    <string name="survey">Survey</string>
+    <string name="withdrawal">Withdrawal</string>
+    <string name="current_balance_0_0_bdt">Current Balance - 0.0 BDT</string>
+    <string name="new_from_geopoll_community_surveys">NEW FROM PAYPOLL: Media Insigt Surveys</string>
+    <string name="complete_profile_to_earn_money">Complete Profile to Earn Money</string>
+    <string name="earn_money_now">Earn Money Now!!</string>
+    <string name="use_mobile_data">Please Use Mobile Data to Participate!</string>
+    <string name="step_1_2">Step 1/2</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="enter_last_8_digit">Enter Last 8 Digit</string>
+    <string name="password">Password</string>
+    <string name="next_step">Next Step</string>
+    <string name="withdrawal_amount">Withdrawal Amount</string>
+    <string name="method">Method</string>
+    <string name="current_balance">Current Balance</string>
+    <string name="earning_history">Earning History</string>
+    <string name="reddem">Redeem</string>
+    <string name="earned_all_time">Earned All Time</string>
+    <string name="login">Login</string>
+    <string name="sign_in">Sign In</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t Have An Account? Sign up</string>
+    <string name="forget_password_click_here">Forget Password? Click Here!!</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="continue_with_phone">Continue with Phone</string>
+    <string name="already_have_an_account_sign_in">Already Have an Account? Sign In</string>
+    <string name="media_insight_descreption">Media Insight Description will be</string>
+    <string name="survey_description">Survey Description will be given here</string>
+    <string name="profile">Profile</string>
+    <string name="profile_description">Profile Description will be given here</string>
+    <string name="earning_history_description">Earning History Description will be</string>
+    <string name="survey_list">Survey List</string>
+    <string name="step_2_2">Step 2/2</string>
+    <string name="pin_number">Pin Number</string>
+    <string name="verify">Verify</string>
+    <string name="resend_pin">Resend Pin</string>
+    <string name="phone_verification_required">Phone Verification Required</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="terms_and_conditions">Terms And Conditions :</string>
+    <string name="accept">Accept</string>
+    <string name="campaign_list">Campaign List</string>
+    <string name="complete_tasks_earn_money">Complete Tasks Earn Money.</string>
+    <string name="powered_by_mindscape_limited">Powered By : Mindscape Limited.</string>
+    <string name="need_multiperm_title">Need Multiple Permissions</string>
+    <string name="grant">Grant</string>
+    <string name="cancel">Cancel</string>
+    <string name="go_to_permissions">Go to Permissions to Grant  SMS and Call</string>
+    <string name="minimum_4_pass">Enter password minimum 4 characters</string>
+    <string name="please_try_again">Please Try Again..</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="auth">Authenticating..</string>
+    <string name="teletalk">TeleTalk</string>
+    <string name="grameen">Grameenphone</string>
+    <string name="airtel">Airtel</string>
+    <string name="robi">Robi</string>
+    <string name="banglalink">Banglalink</string>
+    <string name="unable_to_get_perm">Unable to get Permission</string>
+    <string name="read_carefully">Read Carefully!</string>
+    <string name="input_withdrawal_amount">Input Withdrawal Amount!!</string>
+    <string name="minimum_withdrawal_200">Minimum Withdrawal is 200tk!</string>
+    <string name="maximum_talktime_1000">Maximum TalkTime Withdrawal is 1000tk!</string>
+    <string name="req_lower_than_available">Requested requestedAmount is lower than current balance!</string>
+    <string name="check_internent">Check Internet Connection</string>
+    <string name="refreshing">Refreshing..</string>
+    <string name="empty_camp_history">Campaign History Empty!</string>
+    <string name="get_earnings">Getting Earnings..</string>
+    <string name="new_v_available">New version available</string>
+    <string name="please_update">Please, update app to new version to continue reposting.</string>
+    <string name="update">Update</string>
+    <string name="no_thanks">No, thanks</string>
+    <string name="exit">Exit!!</string>
+    <string name="close_app_q">Do you want to close the app?</string>
+    <string name="empty_wishlist">Wish List Empty!</string>
+    <string name="get_camp">Getting Campaign..</string>
+    <string name="enter_4_digit_pin">Enter 4 digits pin</string>
+    <string name="welcome_paypoll">Welcome To PayPoll</string>
+    <string name="please_fillup_all">Please Fill Up all the fields</string>
+    <string name="under_age">Your age is too low to participate.</string>
+    <string name="enter_valid_email">Please Enter Valid Email</string>
+    <string name="profile_complete_successfully">Profile Completed Successfully!</string>
+    <string name="get_ques">Getting Questions..</string>
+    <string name="confrim">Do you want to confirm?</string>
+    <string name="paypoll">PayPoll</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="curernt_balance">Curernt Balance</string>
+    <string name="_0_0">0.0</string>
+</resources>

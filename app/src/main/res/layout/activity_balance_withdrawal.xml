@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
 
     tools:context="com.example.shohel.geopoll.BalanceWithdrawalActivity">
@@ -26,7 +28,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Total Earnings"
+                android:text="@string/total_earnings"
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -37,7 +39,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="0.0"
+                android:text="0.0 BDT"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -55,7 +57,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Total Withdrawal"
+                android:text="@string/total_withdrawal"
                 android:textColor="@color/white"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -66,7 +68,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="0.0"
+                android:text="0.0 BDT"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -84,7 +86,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Availabe"
+                android:text="@string/available"
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -95,7 +97,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="0.0"
+                android:text="0.0 BDT"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -111,69 +113,99 @@
         android:orientation="vertical"
         android:padding="10dp">
 
-        <TextView
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="@dimen/ten_dp"
-            android:text="Mobile Number"
-            android:textColor="@color/earn_back"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:onClick="mobileNumberBalanceWithdrawalPrompt"
-            android:drawableRight="@drawable/ic_info_24dp"/>
+            android:layout_margin="@dimen/ten_dp"
+            app:cardCornerRadius="@dimen/corner_shape">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/user_mobile_payment_request"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/ten_dp"
+                    android:text="@string/mobile_number"
+                    android:textColor="@color/earn_back"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="mobileNumberBalanceWithdrawalPrompt"
+                    android:drawableRight="@drawable/ic_info_24dp"/>
+                <TextView
+                    android:id="@+id/user_mobile_payment_request"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_input"
+                    android:gravity="center"
+                    android:padding="@dimen/ten_dp"
+                    android:onClick="mobileNumberBalanceWithdrawalPrompt"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/round_input"
-            android:gravity="center"
-            android:padding="@dimen/ten_dp"
-            android:onClick="mobileNumberBalanceWithdrawalPrompt"
-            android:textSize="18sp" />
+            android:layout_margin="@dimen/ten_dp"
+            app:cardCornerRadius="@dimen/corner_shape">
 
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/round_input">
-
-            <EditText
-                android:id="@+id/withdrawal_amount"
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:hint="Withdrawal Amount"
-                android:inputType="numberDecimal" />
-        </android.support.design.widget.TextInputLayout>
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_input">
 
-        <TextView
+                <EditText
+                    android:id="@+id/withdrawal_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/withdrawal_amount"
+                    android:inputType="numberDecimal" />
+            </android.support.design.widget.TextInputLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="@dimen/ten_dp"
-            android:text="Method"
-            android:textColor="@color/earn_back"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:drawableRight="@drawable/ic_info_24dp"
-            android:onClick="paymentMethodAlert"/>
+            android:layout_margin="@dimen/ten_dp"
+            app:cardCornerRadius="@dimen/corner_shape">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/ten_dp"
+                    android:text="@string/method"
+                    android:textColor="@color/earn_back"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/ic_info_24dp"
+                    android:onClick="paymentMethodAlert"/>
 
-        <Spinner
-
-            android:id="@+id/withdrawal_method_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:gravity="center"
-            android:padding="@dimen/ten_dp"
-            android:text="Bkash"
-            android:textSize="18sp" />
-
+                <Spinner
+                    android:layout_margin="@dimen/ten_dp"
+                    android:id="@+id/withdrawal_method_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:padding="@dimen/ten_dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
 
     </LinearLayout>
 
